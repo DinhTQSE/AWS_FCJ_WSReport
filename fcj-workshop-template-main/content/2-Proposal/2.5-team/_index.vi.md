@@ -24,7 +24,7 @@ pre: " <b> 2.5 </b> "
 | Tên | Vai trò | Trách nhiệm chính |
 | :--- | :--- | :--- |
 | **Phạm Viết Lợi** | **Kỹ sư IoT & Firmware** | • **Kiến trúc phần cứng:** Chọn linh kiện (ESP32, AS608, MQ-3) và thiết kế mạch.<br>• **Lập trình nhúng:** Viết firmware C++/PlatformIO để đọc cảm biến và xử lý logic thiết bị.<br>• **Bảo mật thiết bị:** Triển khai quy trình xác thực vân tay trên thiết bị. |
-| **Đặng Đình Bắc** | **Kiến trúc sư Cloud (Backend)** | • **Serverless Computing:** Thiết kế & triển khai các hàm AWS Lambda.<br>• **Thiết kế cơ sở dữ liệu:** Mô hình DynamoDB và tối ưu hóa hiệu năng.<br>• **IaC:** Quản lý hạ tầng bằng **Terraform** và **CodePipeline**. |
+| **Đặng Đình Bắc** | **Kiến trúc sư Cloud (Backend)** | • **Serverless Computing:** Thiết kế & triển khai các hàm AWS Lambda (Python).<br>• **Thiết kế cơ sở dữ liệu:** Mô hình DynamoDB và tối ưu hóa hiệu năng.<br>• **IaC:** Quản lý hạ tầng bằng **Terraform** và **GitHub Actions**. |
 | **Trần Quốc Dinh** | **Kỹ sư IoT Cloud & Fullstack** | • **Kết nối IoT:** Cấu hình AWS IoT Core, MQTT Topics và Rules Engine.<br>• **Tích hợp hệ thống:** Kết nối giữa thiết bị và giao diện Web.<br>• **Hỗ trợ Frontend:** Tích hợp API và xử lý logic giao diện. |
 | **Dương Hải Nam** | **Lập trình viên Frontend** | • **Thiết kế UI/UX:** Xây dựng cổng tra cứu công khai và dashboard quản trị.<br>• **Web Development:** Phát triển SPA bằng **React/Vue.js**.<br>• **Triển khai:** Cấu hình **AWS Amplify** và CI/CD cho frontend. |
 

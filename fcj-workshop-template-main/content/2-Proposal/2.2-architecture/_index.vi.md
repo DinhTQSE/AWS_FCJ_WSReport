@@ -29,7 +29,7 @@ Hệ thống sử dụng các dịch vụ AWS và linh kiện phần cứng như
 | Danh mục | Dịch vụ / Thành phần | Mục đích |
 | :--- | :--- | :--- |
 | **IoT & Ingestion** | **AWS IoT Core** | MQTT Broker bảo mật (TLS 1.2) cho giao tiếp thiết bị. |
-| **Compute** | **AWS Lambda** | Các hàm serverless: `Authorize`, `ProcessViolation`, `GetDashboard`, `SearchByCCCD`. |
+| **Compute** | **AWS Lambda (Python)** | Các hàm serverless: `Authorize`, `ProcessViolation`, `GetDashboard`, `SearchByCCCD`. |
 | **Database** | **Amazon DynamoDB** | Lưu bảng `DeviceOfficerMap_Pool` và `ViolationsDB` (có GSI). |
 | **API Layer** | **Amazon API Gateway** | Cung cấp REST API bảo mật cho frontend. |
 | **Security** | **AWS WAF** | Bảo vệ Amplify hosting khỏi các tấn công web. |

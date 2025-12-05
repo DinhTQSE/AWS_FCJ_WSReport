@@ -30,7 +30,7 @@ The system utilizes the following AWS Services and Hardware components:
 | Category | Service / Component | Purpose |
 | :--- | :--- | :--- |
 | **IoT & Ingestion** | **AWS IoT Core** | Secure MQTT Broker (TLS 1.2) for device communication. |
-| **Compute** | **AWS Lambda** | Serverless functions: `Authorize`, `ProcessViolation`, `GetDashboard`, `SearchByCCCD`. |
+| **Compute** | **AWS Lambda (Python)** | Serverless functions: `Authorize`, `ProcessViolation`, `GetDashboard`, `SearchByCCCD`. |
 | **Database** | **Amazon DynamoDB** | Storage for `DeviceOfficerMap_Pool` and `ViolationsDB` (with Global Secondary Indexes). |
 | **API Layer** | **Amazon API Gateway** | Exposes secure REST API endpoints to the frontend. |
 | **Security** | **AWS WAF** | Protects Amplify hosting from web exploits. |
