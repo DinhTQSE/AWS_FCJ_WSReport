@@ -52,7 +52,7 @@ Các mục tiêu chính gồm:
 * **Truy cập Cloud:** Team SPICA có quyền Administrator trên tài khoản AWS dành riêng cho dự án.
 * **Công nghệ phát triển:**
     * **Firmware:** C++ / PlatformIO  
-    * **Backend:** Node.js (Lambda) & Terraform (IaC)  
+    * **Backend:** Python (Lambda) & Terraform (IaC)  
     * **Frontend:** React/Vue.js trên S3/Amplify  
 
 ### Giới hạn Phạm vi

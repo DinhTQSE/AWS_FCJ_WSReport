@@ -51,7 +51,7 @@ To be considered successful, the system must meet the following quantitative met
 * **Cloud Access:** Team SPICA has Administrator access to a dedicated AWS account for resource provisioning.
 * **Development Stack:**
     * **Firmware:** C++ / PlatformIO.
-    * **Backend:** Node.js (Lambda) & Terraform (IaC).
+    * **Backend:** Python (Lambda) & Terraform (IaC).
     * **Frontend:** React/Vue.js hosted on S3/Amplify.
 
 ### Scope Limitations
