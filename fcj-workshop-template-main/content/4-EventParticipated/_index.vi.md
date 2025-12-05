@@ -6,41 +6,50 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-> Trong phần này, các bạn cần liệt kê và mô tả chi tiết các sự kiện (event) mà mình đã tham gia trong suốt quá trình thực tập hoặc làm việc. 
-> 
-> Mỗi sự kiện nên được trình bày theo định dạng Event 1, Event 2, Event 3…, kèm theo các thông tin:
-> * Tên sự kiện
-> * Thời gian tổ chức
-> * Địa điểm (nếu có)
-> * Vai trò của bạn trong sự kiện (người tham dự, hỗ trợ tổ chức, diễn giả, v.v.)
-> * Mô tả ngắn gọn nội dung và hoạt động chính trong sự kiện
-> * Kết quả hoặc giá trị đạt được (bài học, kỹ năng mới, đóng góp cho nhóm/dự án)
-> * Việc liệt kê này giúp thể hiện rõ sự tham gia thực tế của bạn, cũng như các kỹ năng mềm và kinh nghiệm bạn đã tích lũy qua từng sự kiện.
 
 
-Trong quá trình thực tập, em đã tham gia 2 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là nhứng món quà và những khoảnh khắc rất tuyệt vời.
+Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là một trải nghiệm đáng nhớ với những kiến thức mới, hay và bổ ích, cùng với đó là những món quà và những khoảnh khắc rất tuyệt vời.
 
-### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+### [Event 1](4.1-Event1/)  
+&emsp;**Tên sự kiện:** AI-Driven Development Life Cycle: Reimagining Software Engineering
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+&emsp;**Thời gian:** 2:00 PM - 4:30 PM, Thứ Sáu, 3/10/2025
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Địa điểm:** AWS Event Hall, L26 Bitexco Tower, HCMC
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Vai trò trong sự kiện:** Người tham dự
 
+&emsp;**Mô tả ngắn gọn:** Workshop do AWS GenAI Builder Club tổ chức, tập trung vào cách generative AI biến đổi quy trình phát triển phần mềm. Có demo Amazon Q Developer bởi Toan Huynh và công cụ Kiro bởi My Nguyen.
 
+&emsp;**Kết quả/Giá trị đạt được:** Học được phương pháp AI-DLC có cấu trúc, kỹ thuật prompt engineering cho phát triển phần mềm, và trải nghiệm thực tế với các công cụ AI hỗ trợ phát triển. Thu được insights về phương pháp spec-driven development và chiến lược triển khai thực tiễn để tăng năng suất với AI.
 
-### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** GenAI-powered App-DB Modernization workshop
+---
 
-&emsp;**Thời gian:** 09:00 ngày 13/08/2025
+### [Event 2](4.2-Event2/)  
+&emsp;**Tên sự kiện:** Data Science on AWS Workshop
 
-&emsp;**Địa điểm:** Tầng 26, tòa nhà Bitexco, số 02 đường Hải Triều, phường Sài Gòn, thành phố Hồ Chí Minh
+&emsp;**Thời gian:** 9:30 - 11:45 AM, 18/10/2025
 
-&emsp;**Vai trò trong sự kiện:** Người tham dự 
+&emsp;**Địa điểm:** Hall A - FPTU HCMC
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự
+
+&emsp;**Mô tả ngắn gọn:** Workshop giáo dục do Đại học FPT tổ chức, tập trung vào các kiến thức nền tảng về Machine Learning và hệ sinh thái AWS AI/ML. Được dẫn dắt bởi Van Hoang Kha (Cloud Solutions Architect) và Bach Doan Vuong (Cloud DevOps Engineer).
+
+&emsp;**Kết quả/Giá trị đạt được:** Tiếp thu kiến thức nền tảng về các loại ML (supervised, unsupervised, reinforcement learning), hiểu về vòng đời dự án ML, và có cái nhìn thực tiễn về các dịch vụ AWS AI/ML bao gồm kiến trúc ML stack 3 tầng cho các giải pháp data science có thể mở rộng.
+
+---
+
+### [Event 3](4.3-Event3/)  
+&emsp;**Tên sự kiện:** Workshop: Secure Your Applications - AWS Perimeter Protection  
+
+&emsp;**Thời gian:** Workshop cả ngày, Thứ Ba, 19/11/2025  
+
+&emsp;**Địa điểm:** AWS Training Center, Thành phố Hồ Chí Minh  
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự  
+
+&emsp;**Mô tả ngắn gọn:** Workshop kỹ thuật thực hành do AWS Việt Nam tổ chức, tập trung vào các dịch vụ bảo mật edge và chiến lược bảo vệ perimeter. Được giảng dạy bởi Nguyễn Gia Hưng (Head of SA VN), Julian Ju và Kevin Lim (Regional Edge Security Specialists).
+
+&emsp;**Kết quả/Giá trị đạt được:** Nắm vững cấu hình AWS WAF để bảo vệ ứng dụng web khỏi các cuộc tấn công SQL Injection và XSS, triển khai AWS Shield cho bảo vệ DDoS, và học các mẫu kiến trúc bảo mật edge. Đạt kinh nghiệm thực tế thông qua các bài lab thực hành cấu hình các quy tắc bảo mật và hiểu chiến lược phòng thủ perimeter. 
 

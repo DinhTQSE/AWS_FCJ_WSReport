@@ -1,125 +1,174 @@
 ---
 title: "Event 1"
-date: "2025-09-09"
+date: "2025-10-03"
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Báo cáo tham dự: "AI-Driven Development Life Cycle: Reimagining Software Engineering"
 
-### Mục Đích Của Sự Kiện
+### Thông tin sự kiện
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- **Ngày**: Thứ Sáu, 3 tháng 10, 2025
+- **Thời gian**: 2:00 PM - 4:30 PM
+- **Địa điểm**: AWS Event Hall, Tầng 26 Bitexco Tower, HCMC
+- **Tổ chức**: AWS GenAI Builder Club
+- **Điều phối viên**: Diem My, Dai Truong, Dinh Nguyen
 
-### Danh Sách Diễn Giả
+### Mục đích của sự kiện
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- Khám phá cách generative AI chuyển đổi vòng đời phát triển phần mềm
+- Trình bày quy trình phát triển AI-powered từ kiến trúc đến bảo trì
+- Giới thiệu Amazon Q Developer và Kiro cho phát triển có hỗ trợ AI
+- Trình bày cách tự động hóa AI tăng năng suất và cho phép tập trung vào các tác vụ sáng tạo
+- Cung cấp kinh nghiệm thực hành với các công cụ và phương pháp AI-driven development
+
+### Diễn giả & Lịch trình
+
+**2:00 PM - 2:15 PM: Chào mừng**
+**2:15 PM - 3:30 PM: Tổng quan AI-Driven Development Life Cycle & Trình diễn Amazon Q Developer**
+- **Toàn Huỳnh** – Giảng viên, Chuyên gia AI-Driven Development
+
+**3:30 PM - 3:45 PM: Giải lao**
+**3:45 PM - 4:30 PM: Trình diễn Kiro**
+- **My Nguyễn** – Giảng viên, Chuyên gia Công cụ AI Development
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### AI-DLC Standard Development Workflow
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+Workshop giới thiệu **quy trình phát triển 4 giai đoạn** toàn diện:
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+- **REQUIREMENT**: Product Owner xác định nhu cầu business và user stories
+- **DESIGN**: Software Architect tạo system design và architecture  
+- **IMPLEMENTATION**: Software Engineers phát triển và code giải pháp
+- **DEPLOYMENT**: DevOps team xử lý deployment và operations
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+Đây là **spec-driven development** approach trong đó mỗi giai đoạn được định nghĩa rõ ràng và có sự hỗ trợ của AI.
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### AI-DLC Steps Framework
 
-#### Domain-Driven Design (DDD)
+Phương pháp theo cách tiếp cận có cấu trúc với nhiều thành phần:
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+- **Requirements**: Thu thập yêu cầu business và kỹ thuật ban đầu
+- **Vibe Coding**: AI-assisted rapid prototyping và code generation
+- **Code**: Phát triển production-ready code với AI support
 
-#### Event-Driven Architecture
+**Ba Giai Đoạn Chính:**
+- **Inception**: Lập kế hoạch dự án, user stories và thiết lập ban đầu
+- **Construction**: Domain design, logical design và implementation
+- **Operation**: Deployment, testing và maintenance
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+#### AI-Driven Development Lifecycle (9 Bước)
 
-#### Compute Evolution
+Workshop trình bày chi tiết **quy trình 9 bước**:
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+1. **Build Context on Existing Codes** - Phân tích codebase hiện tại
+2. **Elaborate Intent with User Stories** - Định nghĩa yêu cầu rõ ràng  
+3. **Plan with Units of Work** - Chia nhỏ thành các task quản lý được
+4. **Domain Model (Component Model)** - Thiết kế system architecture
+5. **Generate code & Test** - AI-assisted code generation
+6. **Add architectural components** - Tích hợp system components
+7. **Deploy with IaaC & tests** - Infrastructure as Code deployment
+8. **Deploy in production with** - Production deployment strategies
+9. **Manage incidents** - Ongoing maintenance và issue resolution
 
-#### Amazon Q Developer
+#### Project Structure và Organization
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+Workshop trình bày **repository organization** phù hợp:
+
+- **Root Directory**: Chứa nhiều independent Flask applications
+- **`.kiro/` folder**: Chứa specifications, steering rules và settings
+- **`requirements.txt`**: Shared dependencies cho tất cả applications
+
+**Application Structure** theo consistent patterns:
+- Flask environment configuration
+- Application file với routes và logic  
+- Database models (nếu applicable)
+- Static assets (CSS, JS, Images)
+- HTML templates
+
+#### Prompt Engineering cho Development
+
+Workshop nhấn mạnh tầm quan trọng của **effective prompt templates**:
+
+- **Role Definition**: "You are an expert software architect..."
+- **Task Specification**: Hướng dẫn rõ ràng, actionable cho AI
+- **Context Provision**: Thông tin background liên quan
+- **Output Format**: Structured markdown với checkboxes để tracking
+- **Iterative Refinement**: Quy trình cải thiện và validate AI responses
 
 ### Những Gì Học Được
 
-#### Tư Duy Thiết Kế
+#### Triết Lý AI-Assisted Development
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+- **Human-AI Collaboration**: Cân bằng giữa AI capabilities và human oversight
+- **Iterative Validation**: Luôn validate và review AI-generated code trước khi implementation
+- **Context-Aware Prompting**: Cung cấp đủ context để AI generate các giải pháp liên quan
+- **Structured Approach**: Theo systematic methodology thay vì ad-hoc AI usage
 
-#### Kiến Trúc Kỹ Thuật
+#### Technical Implementation
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+- **Modular Architecture**: Mỗi application component nên independently deployable
+- **Specification-Driven**: Sử dụng clear specifications và steering rules cho consistency
+- **Template-Based Development**: Leverage proven patterns và templates cho faster development
+- **Infrastructure as Code**: Automate deployment và infrastructure management
 
-#### Chiến Lược Hiện Đại Hóa
+#### Project Management với AI
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+- **Unit-Based Planning**: Chia complex projects thành manageable, AI-assistable units
+- **User Story Elaboration**: Sử dụng AI để expand và clarify business requirements
+- **Domain Modeling**: Áp dụng AI để tạo comprehensive component models
+- **Continuous Integration**: Implement automated testing và deployment pipelines
 
 ### Ứng Dụng Vào Công Việc
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+- **Implement AI-DLC Framework**: Áp dụng quy trình 9 bước cho current development projects
+- **Create Prompt Templates**: Phát triển standardized prompts cho common development tasks
+- **Establish Project Structure**: Adopt modular Flask application architecture được trình bày
+- **Integrate AI Tools**: Sử dụng AI cho code generation, testing và documentation
+- **Practice Spec-Driven Development**: Bắt đầu với clear specifications trước implementation
+- **Build Context Libraries**: Maintain reusable components và patterns cho AI assistance
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia workshop **"AI-Driven Development Lifecycle (AI-DLC)"** là một trải nghiệm rất thú vị, thay đổi hoàn toàn quan điểm của tôi về phát triển phần mềm trong kỷ nguyên AI. Một số trải nghiệm nổi bật:
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+#### Học structured AI development methodology
+- **Quy trình AI-DLC 9 bước** cung cấp framework rõ ràng để tích hợp AI trong toàn bộ software development lifecycle.
+- Hiểu về **3-phase approach** (Inception, Construction, Operation) giúp tôi thấy cách AI có thể hỗ trợ ở mỗi giai đoạn.
+- **Spec-driven development model** chứng minh tầm quan trọng của clear requirements trước AI implementation.
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+#### Hands-on AI-assisted development
+- Học practical **prompt engineering techniques** từ **Toan Huynh** cho software development tasks.
+- Trải nghiệm cách structure **project repositories** cho AI-friendly development theo hướng dẫn của Amazon Q Developer.
+- Hiểu tầm quan trọng của **context provision** khi làm việc với AI coding assistants.
+- Thực hành tạo **modular Flask applications** với proper separation of concerns.
+- Demo ấn tượng về **Kiro tool** từ **My Nguyen** cho real-time AI development assistance.
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### Technical architecture insights
+- **Standard development workflow** (Requirement → Design → Implementation → Deployment) cung cấp solid foundation cho AI integration.
+- Học về **role-based development** nơi Product Owners, Software Architects và Engineers collaborate với AI tools.
+- Hiểu **domain modeling** và **component architecture** trong AI-assisted environment.
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+#### Practical implementation strategies
+- Thấy real examples của **AI-generated code** và học validation techniques.
+- Hiểu cách chia complex projects thành **manageable AI-assistable units**.
+- Học về **Infrastructure as Code (IaaC)** deployment strategies với AI support.
+- Có insights về **incident management** trong AI-assisted development environments.
+
+#### Collaboration và workflow optimization
+- Workshop nhấn mạnh **human-AI collaboration** thay vì AI replacement của developers.
+- Học tầm quan trọng của **iterative validation** và human oversight trong AI-generated solutions.
+- Hiểu cách AI có thể enhance **team productivity** mà vẫn maintain code quality và security.
 
 #### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+- AI tools cần **structured approaches** và **clear methodologies** để effective trong professional development.
+- **Prompt engineering** skills từ **Toan Huynh** về Amazon Q Developer là crucial cho modern developers.
+- **Context-aware development** approach significantly improves AI assistance quality theo demo của **Kiro tool**.
+- **Template-based development** patterns có thể accelerate AI-assisted project delivery như được thể hiện trong workshop.
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+
+> Tổng thể, workshop này không chỉ cung cấp practical AI development skills mà còn thiết lập systematic approach để tích hợp AI tools vào professional software development workflows. Structured methodology đảm bảo rằng AI enhances thay vì complicates development process.

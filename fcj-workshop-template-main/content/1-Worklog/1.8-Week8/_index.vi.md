@@ -1,56 +1,40 @@
 ---
 title: "Worklog Tuần 8"
-date: "2025-09-09"
+date: "2025-10-27"
 weight: 8
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng Core Pipeline: Dữ liệu cảm biến truyền đến Database.
+* Hoàn thiện lắp ráp phần cứng và test tất cả cảm biến.
+* Thiết lập kết nối AWS IoT Core.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| 2   | - Lắp ráp mạch trên Breadboard: ESP32 + MQ-3 + MAX30102 + Keypad + LCD + AS608 <br> - Unit test từng cảm biến riêng lẻ                                                                     | 27/10/2025   | 28/10/2025      |
+| 4   | - Viết firmware ESP32: Đọc dữ liệu MQ-3 (nồng độ cồn) và MAX30102 (nhịp tim) <br> - Triển khai input Keypad và hiển thị LCD                                                                | 29/10/2025   | 30/10/2025      |
+| 6   | - Đóng gói dữ liệu cảm biến dạng JSON <br> - Triển khai MQTT publish tới AWS IoT Core                                                                                                       | 31/10/2025   | 31/10/2025      |
+
+| Thứ | Sự kiện/Công việc | Ngày | Hình thức | Nội dung & Kết quả |
+| --- | ----------------- | ---- | --------- | ------------------ |
+| 7   | **Họp Nhóm #1**<br/>*Hardware & Firmware Sprint* | 01/11/2025 | Offline | **Trọng tâm:**<br/>• Debug vấn đề tích hợp cảm biến<br/>• Test kết nối MQTT tới AWS IoT Core<br/>• Review chất lượng code firmware<br/><br/>**Kết quả:**<br/>✓ Tất cả cảm biến hoạt động ổn định<br/>✓ MQTT publish dữ liệu thành công |
+
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| CN   | - Thiết lập AWS IoT Core: Tạo Thing, Policy, Certificate <br> - Cấu hình IoT Rule cho routing dữ liệu <br> - Viết Lambda ProcessViolationFunction <br> - Tạo bảng DynamoDB ViolationsDB <br> - Test end-to-end: Cảm biến → DynamoDB <br> - Viết worklog và review tiến độ tuần | 02/11/2025   | 02/11/2025      |
 
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
+* **Phần cứng**: Tất cả cảm biến hoạt động trên breadboard.
+* **Firmware**: ESP32 đọc cảm biến và publish MQTT thành công.
+* **AWS**: IoT Core đã cấu hình, Lambda xử lý dữ liệu, DynamoDB lưu trữ vi phạm.
+* **Deliverable**: Thổi vào cảm biến MQ-3 → Bản ghi mới xuất hiện trong DynamoDB.
   * ...
 
 * Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.

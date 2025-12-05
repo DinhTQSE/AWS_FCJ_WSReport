@@ -1,57 +1,90 @@
 ---
 title: "Week 12 Worklog"
-date: "2025-09-09"
+date: "2025-11-24"
 weight: 12
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 12 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Complete testing, tuning and optimization.
+* Prepare comprehensive documentation.
+* Record demo video and finalize deliverables.
+* Attend AWS Cloud Mastery Series workshop.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+
+| Day | Task                                                                                                                                                                                            | Start Date | Completion Date |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| 1   | - Stress test: Run stability tests on full system <br> - Calibrate sensors if error margin too large <br> - Improve web UI/UX (CSS refinements)                                                | 24/11/2025 | 26/11/2025      |
+| 4   | - Write Final Report document <br> - Update architecture diagram to latest version <br> - Prepare technical documentation                                                                       | 27/11/2025 | 27/11/2025      |
+
+| Day | Event/Task | Date | Format | Key Activities & Outcomes |
+| --- | ---------- | ---- | ------ | ------------------------- |
+| 6   | **AWS Cloud Mastery Series #3**<br/>*Advanced Security & Networking Architecture* | 29/11/2025 | Offline | **Key Topics:**<br/><br/>**Identity & Access Management:**<br/>• Large-scale permission management with Service Control Policies (SCPs)<br/>• Short-term credentials implementation using AWS STS (Security Token Service)<br/>• Best practices for least-privilege access at organization level<br/><br/>**Network Defense Architecture:**<br/>• Defense-in-Depth architecture design principles<br/>• East-West traffic control using AWS Network Firewall<br/>• Internal traffic inspection and threat prevention<br/><br/>**Microsegmentation Strategy:**<br/>• Security Group Referencing techniques for fine-grained access control<br/>• Transit Gateway integration for multi-VPC security<br/>• Implementing zero-trust network architecture<br/><br/>**Learning Outcomes:**<br/>✓ Mastered enterprise-scale identity governance with SCPs<br/>✓ Implemented secure temporary access patterns with STS<br/>✓ Designed defense-in-depth network architectures<br/>✓ Applied Network Firewall for internal traffic inspection<br/>✓ Configured microsegmentation using Security Group Referencing<br/>✓ Integrated Transit Gateway for secure multi-VPC connectivity |
+| 6   | **Team Meeting #5**<br/>*Final Review & Rehearsal* | 29/11/2025 | Offline | **Focus:**<br/>• Review all deliverables checklist<br/>• Rehearse demo presentation<br/>• Final bug fixes and polish<br/><br/>**Results:**<br/>✓ All components working stably<br/>✓ Documentation complete<br/>✓ Ready for submission |
+
+| Day | Task                                                                                                                                                                                            | Start Date | Completion Date |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- |
+| 7   | - Record product demo video <br> - Package all source code for submission <br> - Final submission: Source code, Report, Video <br> - Write worklog and review week progress                                                                   | 30/11/2025 | 30/11/2025      |
 
 
 ### Week 12 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+#### ✅ Testing & Quality Assurance
+* **Stress Testing**: System stable under load.
+* **Sensor Calibration**: Accuracy within acceptable range.
+* **UI Polish**: Professional web interface.
 
-* Successfully created and configured an AWS Free Tier account.
+#### 📄 Documentation Complete
+* **Final Report**: Comprehensive project documentation.
+* **Architecture Diagram**: Updated to v7 with all components.
+* **API Documentation**: Complete endpoint reference.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+#### 🎥 Deliverables Ready
+* **Demo Video**: Showcasing full workflow.
+* **Source Code**: Clean, documented, version-controlled.
+* **Deployment**: Production system live and operational.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+#### 🎓 Workshop Attended
+* **Advanced Security & Networking:**
+  * Enterprise IAM: SCPs for multi-account permission management
+  * AWS STS: Temporary credentials & cross-account access
+  * Least Privilege: Zero-trust IAM policies at scale
+  * Defense-in-Depth: Multi-layer network security architecture
+  * AWS Network Firewall: East-West traffic inspection & threat prevention
+  * Microsegmentation: Security Group Referencing & Transit Gateway integration
+    * Deployed centralized firewall management architecture
 
-* Used AWS CLI to perform basic operations such as:
+  * **Advanced Threat Protection:**
+    * Blocked malicious traffic between internal resources
+    * Applied deep packet inspection for lateral movement prevention
+    * Configured custom rule sets for organization-specific threats
+    * Integrated with AWS Firewall Manager for centralized policies
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+#### 🌐 Microsegmentation & Zero-Trust Networking
+* **Security Group Referencing:**
+  * Implemented microsegmentation using Security Group references
+  * Created dynamic, self-updating security rules
+  * Reduced management overhead with logical security boundaries
+  * Applied fine-grained access control between application tiers
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Transit Gateway Integration:**
+  * Designed scalable multi-VPC connectivity architecture
+  * Centralized network routing and security inspection
+  * Implemented hub-and-spoke network topology
+  * Applied Transit Gateway security best practices
+
+* **Zero-Trust Network Architecture:**
+  * Eliminated implicit trust between network segments
+  * Verified every connection regardless of source location
+  * Implemented identity-based access controls at network layer
+  * Applied continuous verification and least-privilege principles
+
+#### 🎯 Advanced Security Competencies
+* **Enterprise-Scale Security:** Mastered security patterns applicable to large, complex AWS environments
+* **Architectural Design:** Gained expertise in designing secure, scalable cloud architectures
+* **Best Practices:** Applied AWS Well-Architected Framework security pillar principles
+* **Compliance:** Understood security controls required for regulated industries

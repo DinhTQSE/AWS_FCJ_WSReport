@@ -1,57 +1,90 @@
 ---
 title: "Week 6 Worklog"
-date: "2025-09-09"
+date: "2025-10-13"
 weight: 6
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
 
 ### Week 6 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn advanced AWS Security services for enterprise applications.
+* Implement credential management and application protection strategies.
+* Complete and finalize the internship proposal document.
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task                                                                                                                                                                                           | Start Date | Completion Date | Reference Material                        |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------- | ----------------------------------------- |
+| 1   | - **Lab 1: Credentials Management with AWS Secrets Manager** <br>&emsp; + Create secret storage <br>&emsp; + Configure automatic rotation <br>&emsp; + Integrate with applications          | 13/10/2025 | 13/10/2025      | AWS Secrets Manager Documentation         |
+| 2   | - **Lab 2: Application Protection with AWS WAF** <br>&emsp; + Configure web ACLs <br>&emsp; + Set up rate limiting <br>&emsp; + Block malicious requests                                      | 14/10/2025 | 14/10/2025      | AWS WAF User Guide                       |
+| 3   | - **Lab 3: Threat Detection with AWS GuardDuty** <br>&emsp; + Enable threat detection <br>&emsp; + Configure findings <br>&emsp; + Set up notifications                                       | 15/10/2025 | 15/10/2025      | AWS GuardDuty Documentation              |
+| 4   | - **Lab 4: Security Compliance with AWS Security Hub** <br>&emsp; + Enable security standards <br>&emsp; + Review compliance findings <br>&emsp; + Generate reports                           | 16/10/2025 | 16/10/2025      | AWS Security Hub User Guide             |
+| 5   | - **Complete Internship Proposal** <br>&emsp; + Finalize project objectives <br>&emsp; + Define deliverables <br>&emsp; + Set timeline and milestones                                         | 17/10/2025 | 17/10/2025      | FCJ Proposal Template                    |
+| 6   | - **Weekend Review & Documentation** <br>&emsp; + Review all security lab implementations <br>&emsp; + Document lessons learned <br>&emsp; + Prepare presentation materials                   | 18/10/2025 | 18/10/2025      | Personal Documentation                   |
+| 7   | - **Weekly Summary & Planning** <br>&emsp; + Write comprehensive worklog <br>&emsp; + Analyze security findings <br>&emsp; + Plan next week activities                                         | 19/10/2025 | 19/10/2025      | FCJ Worklog Template                    |
 
 
 ### Week 6 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+**AWS Security Services Implementation:**
 
-* Successfully created and configured an AWS Free Tier account.
+* **AWS Secrets Manager Lab:**
+  * Successfully created and configured secure credential storage
+  * Implemented automatic password rotation for RDS database
+  * Integrated secret retrieval with Lambda functions
+  * Learned best practices for managing API keys and database credentials
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* **AWS WAF (Web Application Firewall) Lab:**
+  * Configured web Access Control Lists (ACLs) for application protection
+  * Implemented rate limiting rules to prevent DDoS attacks
+  * Set up geo-blocking and IP reputation filtering
+  * Successfully blocked SQL injection and XSS attack patterns
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* **AWS GuardDuty Lab:**
+  * Enabled intelligent threat detection across AWS account
+  * Configured threat intelligence feeds and malware detection
+  * Set up CloudWatch Events integration for automated responses
+  * Analyzed security findings and threat indicators
 
-* Used AWS CLI to perform basic operations such as:
+* **AWS Security Hub Lab:**
+  * Enabled AWS Config and AWS Security Hub compliance monitoring
+  * Reviewed CIS AWS Foundations Benchmark findings
+  * Generated comprehensive security posture reports
+  * Implemented remediation strategies for critical findings
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+**Project Management:**
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* **Completed Internship Proposal:**
+  * Defined clear project objectives and scope
+  * Established deliverables and success criteria
+  * Created detailed timeline with weekly milestones
+  * Identified required resources and potential challenges
+
+**Key Learning Outcomes:**
+
+* Gained comprehensive understanding of AWS security architecture
+* Learned to implement defense-in-depth security strategies
+* Developed skills in threat detection and incident response
+* Mastered compliance monitoring and reporting techniques
+* Enhanced project planning and documentation abilities
+
+**Technical Skills Acquired:**
+* Security policy configuration and management
+* Automated threat response implementation
+* Compliance framework understanding
+* Risk assessment and mitigation strategies
+
+**Weekend Activities & Review:**
+
+* **Saturday - Documentation & Analysis:**
+  * Reviewed and analyzed all security lab implementations
+  * Documented detailed steps and configurations for future reference
+  * Created comparison charts between different security services
+  * Identified potential integration opportunities between services
+
+* **Sunday - Summary & Planning:**
+  * Wrote comprehensive weekly worklog with technical details
+  * Analyzed security findings and created improvement recommendations
+  * Prepared presentation materials for next week's progress review
+  * Planned integration strategies for upcoming advanced AWS topics

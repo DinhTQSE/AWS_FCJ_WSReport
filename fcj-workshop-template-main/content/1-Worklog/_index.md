@@ -6,34 +6,69 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+## Project Overview
 
-**On this page**, you will need to introduce your worklog. **How** did you complete it? How many weeks did you take to complete the program? **What** did you do in those weeks?
+This worklog documents a **12-week learning journey** (September - November 2025) focused on mastering **AWS Cloud Computing** through hands-on development of an IoT Smart Device Management System. The project serves as a practical vehicle to learn and apply core AWS services, cloud architecture principles, and modern DevOps practices.
 
-Typically, and as a standard, a worklog is carried out over about 3 months (throughout the internship period) with weekly contents as follows:
+### Learning Objectives
 
-**Week 1:** [Getting familiar with AWS and basic AWS services](1.1-week1/)
+The primary goal was to gain comprehensive understanding of **AWS Cloud Computing fundamentals and core services** through hands-on practice:
 
-**Week 2:** [Doing task A...](1.2-week2/)
+**Core AWS Services:**
+- **Compute**: EC2, Lambda (serverless functions)
+- **Storage**: S3 (object storage), EBS, CloudFront (CDN)
+- **Database**: DynamoDB (NoSQL), RDS concepts
+- **Networking**: VPC, Security Groups, Route 53
+- **Security & Identity**: IAM (users, roles, policies), WAF, Shield
+- **Monitoring & Management**: CloudWatch (metrics, logs, alarms)
+- **IoT & Integration**: IoT Core, API Gateway, EventBridge
+- **Developer Tools**: CodePipeline, CodeBuild, Amplify
 
-**Week 3:** [Doing task B...](1.3-week3/)
+**Cloud Architecture Principles:**
+- **Infrastructure as Code** (Terraform) for automated provisioning
+- **Serverless architecture patterns** and best practices
+- **Security-first design** with least privilege access
+- **Cost optimization** strategies for cloud resources
+- **High availability & scalability** design patterns
+- **AWS Well-Architected Framework** implementation
 
-**Week 4:** [Doing task C...](1.4-week4/)
+### Development Timeline
 
-**Week 5:** [Doing task D...](1.5-week5/)
+The project followed an agile methodology with weekly sprints, progressing from foundational AWS knowledge through to production-ready deployment:
 
-**Week 6:** [Doing task E...](1.6-week6/)
+**Week 1-7:** [Foundation & Planning Phase](1.1-week1/) - AWS fundamentals, architecture design, and project planning
 
-**Week 7:** [Doing task G...](1.7-week7/)
+**Week 8:** [Hardware & IoT Integration](1.8-week8/) - Core pipeline development, sensor integration, AWS IoT Core setup
 
-**Week 8:** [Doing task H...](1.8-week8/)
+**Week 9:** [Authentication & API Development](1.9-week9/) - Hybrid authentication system, Lambda functions, API Gateway configuration
 
-**Week 9:** [Doing task I...](1.9-week9/)
+**Week 10:** [Frontend Development & Deployment](1.10-week10/) - Web interface, S3/CloudFront deployment, end-to-end testing
 
-**Week 10:** [Doing task L...](1.10-week10/)
+**Week 11:** [Infrastructure as Code & CI/CD](1.11-week11/) - Terraform implementation, automated pipelines, security hardening (WAF, monitoring)
 
-**Week 11:** [Doing task M...](1.11-week11/)
+**Week 12:** [Testing & Documentation](1.12-week12/) - System optimization, final testing, documentation, and project delivery
 
-**Week 12:** [Doing task N...](1.12-week12/)
+### Key Learning Outcomes
+
+✅ **Hands-on experience** with 10+ core AWS services
+✅ **Serverless architecture mastery** - Lambda, API Gateway, DynamoDB
+✅ **IoT data pipeline** implementation with AWS IoT Core and rules engine
+✅ **Cloud security implementation** - IAM policies, WAF rules, encryption
+✅ **Infrastructure as Code proficiency** - Terraform for AWS resource management
+✅ **CI/CD automation skills** - CodePipeline, Amplify deployment workflows
+✅ **Cloud monitoring & observability** - CloudWatch dashboards, alarms, and logs
+✅ **Cost-aware architecture** - Serverless computing and pay-per-use services
+
+### Technologies Used
+
+**Cloud Services:** AWS IoT Core, Lambda, API Gateway, DynamoDB, S3, CloudFront, CloudWatch, WAF, Shield
+
+**Infrastructure:** Terraform, AWS CodePipeline, AWS Amplify
+
+**Hardware:** ESP32, MQ-3 Sensor, MAX30102 Sensor, AS608 Fingerprint Module
+
+**Frontend:** HTML5, CSS3, JavaScript (Vanilla)
+
+**Development:** Git, VS Code, AWS CLI
+
+This worklog provides detailed weekly documentation of the **AWS learning journey**, including hands-on exercises, challenges encountered, AWS services explored, and practical skills gained throughout the 12-week cloud computing program.

@@ -1,59 +1,53 @@
 ---
-title: "Worklog Tuần 3"
-date: "2025-09-09"
+title: "Nhật Ký Tuần 3"
+date: "2025-09-22"
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục Tiêu Tuần 3:
 
-### Mục tiêu tuần 3:
+* Tìm hiểu về Amazon Elastic Compute Cloud (EC2) và các khái niệm cốt lõi.  
+* Hiểu về các loại instance, AMI, EBS, Instance Store, User Data và Meta Data.  
+* Thực hành khởi chạy và cấu hình cả Windows và Linux instances.  
+* Triển khai ứng dụng Node.js CRUD mẫu (AWS User Management) trên EC2.  
+* Khám phá cơ bản về EC2 Auto Scaling.  
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Nhiệm vụ cần thực hiện trong tuần này:
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Ngày | Nhiệm vụ                                                                                         | Ngày Bắt Đầu | Ngày Hoàn Thành | Tài Liệu Tham Khảo                                                                                                                                                        |
+| ---- | ------------------------------------------------------------------------------------------------ | ------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1    | - Học Module 03-01: Compute VM on AWS                                                           | 22/09/2025    | 22/09/2025      | [Module 03-01 - Compute VM on AWS](https://www.youtube.com/watch?v=XXXX)                                                                                                |
+| 2    | - Học Module 03-01-01: EC2 Instance Type<br />- Học Module 03-01-02: AMI / Backup / Key Pair   | 23/09/2025    | 23/09/2025      | [Module 03-01-01 - Amazon EC2 Instance type](https://www.youtube.com/watch?v=XXXX)                                                                                      |
+| 3    | - Học Module 03-01-03: Amazon Elastic Block Store<br />- Học Module 03-01-04: Instance Store   | 24/09/2025    | 24/09/2025      | [Module 03-01-03 - Amazon Elastic Block Store](https://www.youtube.com/watch?v=XXXX)                                                                                    |
+| 4    | - Học Module 03-01-05: User Data<br />- Học Module 03-01-06: Meta Data                         | 25/09/2025    | 25/09/2025      | [Module 03-01-05 - EC2 User Data](https://www.youtube.com/watch?v=XXXX)                                                                                                 |
+| 5    | - Học Module 03-01-07: EC2 Auto Scaling                                                         | 26/09/2025    | 26/09/2025      | [Module 03-01-07 - EC2 Auto Scaling](https://www.youtube.com/watch?v=XXXX)                                                                                              |
+| 6    | - Thực hành Lab: Khởi chạy Windows và Linux EC2 instances, cấu hình Security Groups và Key Pairs | 27/09/2025    | 27/09/2025      | AWS Lab Guide + Tài liệu lớp học                                                                                                                                        |
+| 7    | - Triển khai ứng dụng AWS User Management CRUD trên Linux EC2<br />- Triển khai ứng dụng AWS User Management CRUD trên Windows EC2<br />- Viết Nhật ký Tuần 3 | 28/09/2025    | 28/09/2025      | AWS Lab Guide + GitHub Repository                                                                                                                                        |
 
+### Thành Tựu Tuần 3:
 
-### Kết quả đạt được tuần 3:
+* Hoàn thành các module lý thuyết:  
+  * Hiểu được **cơ bản về EC2** và chu trình sống của instance.  
+  * Tìm hiểu về **AMI, Backup, Key Pair, EBS và Instance Store**.  
+  * Khám phá **User Data & Meta Data** để tự động hóa và lấy thông tin instance.  
+  * Nghiên cứu **EC2 Auto Scaling** để tối ưu hóa khả năng mở rộng và chi phí.  
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Hoàn thành các bài tập thực hành:  
+  * Thành công khởi chạy **các Windows và Linux EC2 instances**.  
+  * Cấu hình **security groups và key pairs** để truy cập an toàn.  
+  * Triển khai **AWS User Management** (ứng dụng Node.js CRUD) trên cả Linux và Windows instances.  
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Sản phẩm bàn giao:  
+  * Nộp **Nhật ký Tuần 3**.  
+  * Demo hoạt động của AWS User Management có thể truy cập qua EC2 public DNS.  
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+### Suy Ngẫm Tuần 3:
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+- Thực hành với **cả Windows và Linux EC2** giúp tôi hiểu rõ sự khác biệt trong việc triển khai và quản lý.  
+- Tôi nhận ra tầm quan trọng của **security groups và key pairs** trong việc kiểm soát truy cập.  
+- Việc triển khai ứng dụng Node.js CRUD cho tôi kinh nghiệm thực tế trong việc kết nối **EC2 instances với MySQL**.  
+- Tuần này giúp tôi thu hẹp khoảng cách giữa **lý thuyết (video, modules)** và **thực hành (lab, triển khai)**.
 
 

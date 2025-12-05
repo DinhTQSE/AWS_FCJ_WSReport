@@ -1,57 +1,52 @@
 ---
 title: "Week 3 Worklog"
-date: "2025-09-09"
+date: "2025-09-22"
 weight: 3
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 
 ### Week 3 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn about Amazon Elastic Compute Cloud (EC2) and its core concepts.  
+* Understand instance types, AMI, EBS, Instance Store, User Data, and Meta Data.  
+* Practice launching and configuring both Windows and Linux instances.  
+* Deploy a sample Node.js CRUD application (AWS User Management) on EC2.  
+* Explore EC2 Auto Scaling basics.  
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
+| Day | Task                                                                                              | Start Date | Completion Date | Reference Material                                                                                                                                                           |
+| --- | ------------------------------------------------------------------------------------------------- | ---------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | - Study Module 03-01: Compute VM on AWS                                                           | 09/22/2025 | 09/22/2025      | [Module 03-01 - Compute VM on AWS](https://www.youtube.com/watch?v=XXXX)                                                                                                   |
+| 2   | - Study Module 03-01-01: EC2 Instance Type<br />- Study Module 03-01-02: AMI / Backup / Key Pair  | 09/23/2025 | 09/23/2025      | [Module 03-01-01 - Amazon EC2 Instance type](https://www.youtube.com/watch?v=XXXX)                                                                                         |
+| 3   | - Study Module 03-01-03: Amazon Elastic Block Store<br />- Study Module 03-01-04: Instance Store  | 09/24/2025 | 09/24/2025      | [Module 03-01-03 - Amazon Elastic Block Store](https://www.youtube.com/watch?v=XXXX)                                                                                       |
+| 4   | - Study Module 03-01-05: User Data<br />- Study Module 03-01-06: Meta Data                        | 09/25/2025 | 09/25/2025      | [Module 03-01-05 - EC2 User Data](https://www.youtube.com/watch?v=XXXX)                                                                                                    |
+| 5   | - Study Module 03-01-07: EC2 Auto Scaling                                                         | 09/26/2025 | 09/26/2025      | [Module 03-01-07 - EC2 Auto Scaling](https://www.youtube.com/watch?v=XXXX)                                                                                                 |
+| 6   | - Do Lab: Launch Windows and Linux EC2 instances, configure Security Groups and Key Pairs         | 09/27/2025 | 09/27/2025      | AWS Lab Guide + Class Material                                                                                                                                             |
+| 7   | - Deploy AWS User Management CRUD app on Linux EC2<br />- Deploy AWS User Management CRUD app on Windows EC2<br />- Write Week 3 Worklog | 09/28/2025 | 09/28/2025      | AWS Lab Guide + GitHub Repository                                                                                                                                           |
 
 ### Week 3 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Completed theoretical modules:  
+  * Understood **EC2 basics** and instance lifecycle.  
+  * Learned about **AMI, Backup, Key Pair, EBS, and Instance Store**.  
+  * Explored **User Data & Meta Data** for automation and instance information.  
+  * Studied **EC2 Auto Scaling** for scalability and cost optimization.  
 
-* Successfully created and configured an AWS Free Tier account.
+* Completed lab exercises:  
+  * Successfully launched **Windows and Linux EC2 instances**.  
+  * Configured **security groups and key pairs** for secure access.  
+  * Deployed **AWS User Management** (Node.js CRUD app) on both Linux and Windows instances.  
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Deliverables:  
+  * Submitted **Worklog Week 3**.  
+  * Running demo of AWS User Management accessible through EC2 public DNS.  
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+### Week 3 Reflections:
 
-* Used AWS CLI to perform basic operations such as:
+- Practicing with **both Windows and Linux EC2** helped me understand differences in deployment and management.  
+- I saw how important **security groups and key pairs** are in controlling access.  
+- The Node.js CRUD app deployment gave me real-world experience connecting **EC2 instances with MySQL**.  
+- This week helped me bridge the gap between **theory (videos, modules)** and **practice (lab, deployment)**.  
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...

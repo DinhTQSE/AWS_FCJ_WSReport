@@ -1,125 +1,154 @@
 ---
 title: "Event 2"
-date: "2025-09-09"
-weight: 1
+date: "2025-10-18"
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+# Báo cáo tham dự: "Workshop Data Science trên AWS"
 
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+### Thông tin sự kiện
 
-### Mục Đích Của Sự Kiện
+- **Ngày**: 18 tháng 10, 2025
+- **Thời gian**: 9:30 - 11:45 sáng
+- **Địa điểm**: Hội trường A - Đại học FPT HCMC
+- **Chủ trì**: Đoàn Nguyễn Thành Hòa - Giảng viên CF, Đại học FPT HCMC
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Mục đích của sự kiện
 
-### Danh Sách Diễn Giả
+- Cung cấp kiến thức nền tảng về Machine Learning và AI
+- Giới thiệu hệ sinh thái AWS AI/ML và các dịch vụ
+- Chia sẻ phương pháp thực tế cho các dự án data science
+- Hướng dẫn sinh viên xây dựng giải pháp ML sử dụng nền tảng AWS cloud
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### Danh sách diễn giả
 
-### Nội Dung Nổi Bật
+- **Văn Hoàng Kha** – Cloud Solutions Architect, AWS User Group Leaders
+- **Bạch Doãn Vương** – Cloud DevOps Engineer, AWS Community Builder
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+### Nội dung nổi bật
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Kiến thức nền tảng về Machine Learning
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
+**Định nghĩa**: Machine Learning (ML) là một lĩnh vực của AI, cho phép máy tính "học" từ dữ liệu để thực hiện tác vụ mà không cần lập trình tường minh.
 
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
+**Ba loại chính**:
+- **Học có giám sát (Supervised Learning)**: Học từ dữ liệu đã được gán nhãn (ví dụ: phân loại email spam)
+- **Học không giám sát (Unsupervised Learning)**: Tự tìm ra cấu trúc trong dữ liệu chưa được gán nhãn (ví dụ: phân nhóm khách hàng)
+- **Học tăng cường (Reinforcement Learning)**: Học qua thử và sai bằng cách tương tác với môi trường (ví dụ: AI chơi game, xe tự lái)
 
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
+#### Quy trình của một dự án Machine Learning
 
-#### Domain-Driven Design (DDD)
+Vòng đời chuẩn của bất kỳ dự án Data Science nào bao gồm 4 giai đoạn chính:
 
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
+1. **Xác định vấn đề**: Chuyển bài toán kinh doanh thành bài toán máy học
+2. **Xử lý dữ liệu**: Thu thập, làm sạch, và phân tích dữ liệu (thường chiếm nhiều thời gian nhất)
+3. **Xây dựng mô hình**:
+   - **Feature Engineering**: Tạo ra các đặc trưng tốt nhất cho mô hình
+   - **Training & Tuning**: Huấn luyện và tinh chỉnh mô hình
+   - **Evaluation**: Đánh giá độ chính xác của mô hình
+4. **Triển khai & Vận hành (MLOps)**: Đưa mô hình vào sử dụng thực tế, liên tục giám sát, và huấn luyện lại khi cần thiết
 
-#### Event-Driven Architecture
+#### Hệ sinh thái AI/ML của AWS
 
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
+AWS cung cấp một bộ công cụ toàn diện gồm 3 tầng, phục vụ mọi đối tượng người dùng:
 
-#### Compute Evolution
+**Tầng 1: AI Services (Dịch vụ AI tạo sẵn - Dùng API)**
+Các dịch vụ "thông minh" có thể tích hợp ngay vào ứng dụng mà không cần chuyên môn về ML:
 
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
+*Xử lý Ngôn ngữ & Âm thanh*:
+- **Amazon Comprehend**: "Đọc hiểu" văn bản (phân tích cảm xúc, trích xuất thực thể)
+- **Amazon Translate**: "Dịch" văn bản giữa các ngôn ngữ
+- **Amazon Textract**: "Đọc" và trích xuất văn bản/dữ liệu từ tài liệu, hình ảnh (OCR thông minh)
+- **Amazon Polly**: "Nói" (chuyển văn bản thành giọng nói tự nhiên)
+- **Amazon Transcribe**: "Nghe" (chuyển giọng nói thành văn bản)
+- **Amazon Lex**: "Bộ não" xây dựng chatbot và voice bot hội thoại (công nghệ của Alexa)
 
-#### Amazon Q Developer
+*Thị giác Máy tính*:
+- **Amazon Rekognition**: "Nhìn" và phân tích hình ảnh/video (phát hiện đối tượng, nhận dạng khuôn mặt)
 
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+*Cá nhân hóa*:
+- **Amazon Personalize**: Xây dựng hệ thống gợi ý (recommendation engine) mạnh mẽ (công nghệ của Amazon.com)
 
-### Những Gì Học Được
+**Tầng 2: ML Services (Nền tảng Máy học)**
+- **Amazon SageMaker**: Nền tảng tích hợp toàn diện, cung cấp công cụ cho mọi bước trong quy trình máy học, từ chuẩn bị dữ liệu đến huấn luyện, triển khai và giám sát mô hình
 
-#### Tư Duy Thiết Kế
+**Tầng 3: ML Frameworks & Infrastructure (Hạ tầng & Nền tảng)**
+- **Hỗ trợ đầy đủ**: Cung cấp các máy chủ mạnh mẽ (CPU, GPU, chip chuyên dụng AWS) và hỗ trợ mọi framework phổ biến
+- **Frameworks chính**: TensorFlow (mạnh mẽ, toàn diện), PyTorch (linh hoạt, trực quan)
+- **Linh hoạt tối đa**: Cho phép mang môi trường tùy chỉnh lên AWS thông qua "Bring Your Own Container"
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
+### Những gì học được
 
-#### Kiến Trúc Kỹ Thuật
+#### Tư duy cốt lõi & Lời khuyên thực tế
 
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
+**Tư duy quan trọng nhất**:
+- **Thinking like a Cloud Engineer, Not only AI Engineer**: Để thành công, bạn không chỉ cần xây dựng mô hình chính xác mà còn phải biết cách triển khai, mở rộng, tối ưu chi phí và bảo mật nó trên nền tảng đám mây
 
-#### Chiến Lược Hiện Đại Hóa
+#### Nguồn dữ liệu cho cá nhân
 
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+**Kho dữ liệu công khai**:
+- **Kaggle**, **Hugging Face Hub**, **UCI Repository** là những nơi tốt nhất để bắt đầu
 
-### Ứng Dụng Vào Công Việc
+**Tự tạo dữ liệu**:
+- Sử dụng kỹ thuật **Web Scraping** (cào dữ liệu web), API, hoặc dùng chính AI để tạo **dữ liệu giả lập (Synthetic Data)**
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+#### Chiến lược AWS ML
 
-### Trải nghiệm trong event
+**Phương pháp ba tầng**:
+- **Bắt đầu đơn giản**: Sử dụng AI Services cho các quick wins và proof of concepts
+- **Mở rộng thông minh**: Chuyển sang SageMaker cho các quy trình ML tùy chỉnh
+- **Tối ưu sâu**: Tận dụng tầng infrastructure để đạt hiệu suất và tối ưu chi phí tối đa
 
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+#### Best practices triển khai
 
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+- **Chất lượng dữ liệu đầu tiên**: Dữ liệu sạch, phù hợp quan trọng hơn thuật toán phức tạp
+- **Bắt đầu từ vấn đề kinh doanh**: Không xây dựng ML vì mục đích công nghệ
+- **Lặp lại nhanh chóng**: Sử dụng dịch vụ managed của AWS để tập trung vào logic kinh doanh, không phải hạ tầng
+- **Giám sát liên tục**: Mô hình ML suy giảm theo thời gian và cần được chú ý liên tục
 
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+### Ứng dụng vào công việc
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+- **Bắt đầu với AI Services**: Sử dụng Amazon Rekognition, Comprehend, hoặc Translate cho các quick wins trong dự án hiện tại
+- **Khám phá SageMaker**: Bắt đầu với SageMaker Studio để khám phá dữ liệu và thử nghiệm mô hình
+- **Thực hành thu thập dữ liệu**: Sử dụng web scraping và public datasets để xây dựng các dự án ML cá nhân
+- **Học MLOps**: Hiểu toàn bộ vòng đời ML từ phát triển đến triển khai production
+- **Xây dựng cloud-native**: Thiết kế các giải pháp ML với khả năng mở rộng, tối ưu chi phí và bảo mật
+- **Tham gia cộng đồng AWS**: Kết nối với AWS User Groups và Community Builders để chia sẻ kiến thức
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
+### Trải nghiệm trong sự kiện
 
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
+Tham gia workshop **"Data Science trên AWS"** tại Đại học FPT là một trải nghiệm thú vị, cung cấp những hiểu biết toàn diện về machine learning và các dịch vụ AWS cloud. Một số trải nghiệm nổi bật:
 
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+#### Học hỏi từ các chuyên gia AWS
+- **Văn Hoàng Kha** và **Bạch Doãn Vượng** đã chia sẻ kiến thức sâu rộng về **hệ sinh thái AWS AI/ML** và các chiến lược triển khai thực tế.
+- Thông qua các ví dụ thực tế, tôi hiểu sâu hơn về **kiến trúc AWS ML 3 tầng** và cách các dịch vụ khác nhau bổ trợ cho nhau.
+
+#### Hiểu về nền tảng ML
+- Học được **ba loại chính của machine learning**: supervised, unsupervised, và reinforcement learning với các ví dụ rõ ràng.
+- Hiểu về **vòng đời hoàn chỉnh của dự án ML** từ định nghĩa vấn đề đến triển khai và vận hành liên tục.
+- Khám phá tầm quan trọng của **chất lượng dữ liệu và feature engineering** trong việc xây dựng mô hình ML thành công.
+
+#### Khám phá các dịch vụ AWS AI
+- Được tiếp xúc thực tế với **các dịch vụ AI có sẵn** như Amazon Comprehend, Rekognition, và Translate có thể tích hợp ngay lập tức.
+- Học về **Amazon SageMaker** như một nền tảng toàn diện cho quy trình ML tùy chỉnh và quản lý mô hình.
+- Hiểu về **tầng hạ tầng** hỗ trợ các framework phổ biến như TensorFlow và PyTorch.
+
+#### Phát triển tư duy cloud-native
+- Khái niệm **"Think like a Cloud Engineer, Not only AI Engineer"** đặc biệt có giá trị, nhấn mạnh tầm quan trọng của triển khai, mở rộng và tối ưu chi phí.
+- Học về **thực hành MLOps** và nhu cầu giám sát liên tục và huấn luyện lại mô hình.
+- Hiểu về sự cân bằng giữa **khả năng kỹ thuật và yêu cầu kinh doanh**.
+
+#### Hướng dẫn thực tế cho việc thu thập dữ liệu
+- Khám phá các **bộ dữ liệu công khai** có giá trị trên Kaggle, Hugging Face Hub, và UCI Repository để học tập và thử nghiệm.
+- Học về **kỹ thuật web scraping** và sử dụng AI để tạo dữ liệu synthetic cho mục đích huấn luyện.
+- Hiểu tầm quan trọng của **chuẩn bị và làm sạch dữ liệu** như phần tốn thời gian nhất của các dự án ML.
+
+#### Xây dựng mạng lưới và cộng đồng
+- Kết nối với **các AWS community builders** và học về sự hỗ trợ liên tục thông qua các user groups.
+- Trao đổi ý tưởng với các sinh viên và chuyên gia khác quan tâm đến data science và cloud computing.
+- Có cái nhìn sâu sắc về **con đường sự nghiệp** trong lĩnh vực cloud engineering và data science.
+
+
+> Tổng thể, workshop này không chỉ cung cấp kiến thức kỹ thuật về các dịch vụ AWS ML mà còn giúp tôi hiểu được hành trình hoàn chỉnh từ các vấn đề kinh doanh đến các giải pháp ML được triển khai, nhấn mạnh tầm quan trọng của tư duy cloud-native trong các dự án data science hiện đại.

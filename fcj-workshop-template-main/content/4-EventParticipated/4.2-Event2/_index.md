@@ -1,126 +1,157 @@
 ---
 title: "Event 2"
-date: "2025-09-09"
-weight: 1
+date: "2025-10-18"
+weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: "Data Science on AWS Workshop"
+
+### Event Information
+
+- **Date**: October 18, 2025
+- **Time**: 9:30 - 11:45 AM
+- **Venue**: Hall A - FPTU HCMC
+- **Host**: Doan Nguyen Thanh Hoa - CF Lecturer, FPT University HCMC
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Provide foundational knowledge about Machine Learning and AI
+- Introduce AWS AI/ML ecosystem and services
+- Share practical approaches for data science projects
+- Guide students on building ML solutions using AWS cloud platform
 
 ### Speakers
 
-- **Jignesh Shah** – Director, Open Source Databases
-- **Erica Liu** – Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** – Assc. Specialist SA, Serverless Amazon Web Services
+- **Van Hoang Kha** – Cloud Solutions Architect, AWS User Group Leaders
+- **Bach Doan Vuong** – Cloud DevOps Engineer, AWS Community Builder
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Machine Learning Fundamentals
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+**Definition**: Machine Learning (ML) is a field of AI that enables computers to "learn" from data to perform tasks without explicit programming.
 
-#### Transitioning to modern application architecture – Microservices
+**Three main types**:
+- **Supervised Learning**: Learning from labeled data (e.g., spam email classification)
+- **Unsupervised Learning**: Finding patterns in unlabeled data (e.g., customer segmentation)
+- **Reinforcement Learning**: Learning through trial and error by interacting with environment (e.g., game AI, autonomous vehicles)
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+#### Machine Learning Project Lifecycle
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+The standard lifecycle of any Data Science project includes 4 main phases:
 
-#### Domain-Driven Design (DDD)
+1. **Problem Definition**: Transform business problems into machine learning problems
+2. **Data Processing**: Data collection, cleaning, and analysis (often takes the most time)
+3. **Model Building**:
+   - **Feature Engineering**: Create the best features for the model
+   - **Training & Tuning**: Train and fine-tune the model
+   - **Evaluation**: Assess model accuracy
+4. **Deployment & Operations (MLOps)**: Deploy model to production, continuous monitoring, and retraining when needed
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+#### AWS AI/ML Ecosystem
 
-#### Event-Driven Architecture
+AWS provides a comprehensive 3-tier toolkit serving all types of users:
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+**Tier 1: AI Services (Pre-built AI Services - API Usage)**
+Ready-to-use "intelligent" services you can integrate directly into applications without ML expertise:
 
-#### Compute Evolution
+*Language & Audio Processing*:
+- **Amazon Comprehend**: "Understanding" text (sentiment analysis, entity extraction)
+- **Amazon Translate**: "Translating" text between languages
+- **Amazon Textract**: "Reading" and extracting text/data from documents, images (intelligent OCR)
+- **Amazon Polly**: "Speaking" (text-to-speech with natural voice)
+- **Amazon Transcribe**: "Listening" (speech-to-text conversion)
+- **Amazon Lex**: "Brain" for building conversational chatbots and voice bots (Alexa technology)
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+*Computer Vision*:
+- **Amazon Rekognition**: "Seeing" and analyzing images/videos (object detection, facial recognition)
 
-#### Amazon Q Developer
+*Personalization*:
+- **Amazon Personalize**: Building powerful recommendation engines (Amazon.com technology)
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
+**Tier 2: ML Services (Machine Learning Platform)**
+- **Amazon SageMaker**: Comprehensive integrated platform providing tools for every step in the ML workflow, from data preparation to training, deployment, and model monitoring
+
+**Tier 3: ML Frameworks & Infrastructure**
+- **Full support**: Provides powerful servers (CPU, GPU, AWS specialized chips) and supports all popular frameworks
+- **Main frameworks**: TensorFlow (powerful, comprehensive), PyTorch (flexible, intuitive)
+- **Maximum flexibility**: Allows bringing your own custom environment to AWS through "Bring Your Own Container"  
 
 ### Key Takeaways
 
-#### Design Mindset
+#### Core Mindset & Practical Advice
 
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
+**Most important mindset**:
+- **Think like a Cloud Engineer, Not only AI Engineer**: To succeed, you need not only to build accurate models but also know how to deploy, scale, optimize costs, and secure them on cloud platforms
 
-#### Technical Architecture
+#### Data Sources for Individuals
 
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
+**Public datasets**:
+- **Kaggle**, **Hugging Face Hub**, **UCI Repository** are the best places to start
 
-#### Modernization Strategy
+**Self-generated data**:
+- Use **Web Scraping** techniques, APIs, or use AI itself to create **Synthetic Data**
 
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+#### AWS ML Strategy
+
+**Three-tier approach**:
+- **Start simple**: Use AI Services for quick wins and proof of concepts
+- **Scale intelligently**: Move to SageMaker for custom ML workflows
+- **Optimize deeply**: Leverage infrastructure tier for maximum performance and cost efficiency
+
+#### Implementation Best Practices
+
+- **Data quality first**: Clean, relevant data is more important than complex algorithms
+- **Start with business problems**: Don't build ML for the sake of technology
+- **Iterate quickly**: Use AWS managed services to focus on business logic, not infrastructure
+- **Monitor continuously**: ML models degrade over time and need ongoing attention  
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- **Start with AI Services**: Use Amazon Rekognition, Comprehend, or Translate for quick wins in current projects
+- **Explore SageMaker**: Begin with SageMaker Studio for data exploration and model experimentation
+- **Practice data collection**: Use web scraping and public datasets to build personal ML projects
+- **Learn MLOps**: Understand the full ML lifecycle from development to production deployment
+- **Build cloud-native**: Design ML solutions with scalability, cost optimization, and security in mind
+- **Join AWS community**: Connect with AWS User Groups and Community Builders for knowledge sharing  
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending the **"Data Science on AWS"** workshop at FPT University was an enlightening experience that provided comprehensive insights into machine learning and AWS cloud services. Key experiences included:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Learning from AWS experts
+- **Van Hoang Kha** and **Bach Doan Vuong** shared extensive knowledge about **AWS AI/ML ecosystem** and real-world implementation strategies.  
+- Through practical examples, I gained deeper understanding of the **3-tier AWS ML architecture** and how different services complement each other.  
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+#### Understanding ML fundamentals
+- Learned the **three main types of machine learning**: supervised, unsupervised, and reinforcement learning with clear examples.  
+- Understood the **complete ML project lifecycle** from problem definition to deployment and ongoing operations.  
+- Discovered the importance of **data quality and feature engineering** in building successful ML models.  
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Exploring AWS AI services
+- Got hands-on exposure to **pre-built AI services** like Amazon Comprehend, Rekognition, and Translate that can be integrated immediately.  
+- Learned about **Amazon SageMaker** as a comprehensive platform for custom ML workflows and model management.  
+- Understood the **infrastructure layer** supporting popular frameworks like TensorFlow and PyTorch.  
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+#### Developing cloud-native mindset
+- The concept of **"Think like a Cloud Engineer, Not only AI Engineer"** was particularly valuable, emphasizing the importance of deployment, scaling, and cost optimization.  
+- Learned about **MLOps practices** and the need for continuous monitoring and model retraining.  
+- Understanding the balance between **technical capabilities and business requirements**.
 
-#### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+#### Practical guidance for data acquisition
+- Discovered valuable **public datasets** on Kaggle, Hugging Face Hub, and UCI Repository for learning and experimentation.  
+- Learned about **web scraping techniques** and using AI to generate synthetic data for training purposes.  
+- Understood the importance of **data preparation and cleaning** as often the most time-consuming part of ML projects.
 
-#### Some event photos
-*Add your event photos here*  
+#### Networking and community building
+- Connected with **AWS community builders** and learned about ongoing support through user groups.  
+- Exchanged ideas with fellow students and professionals interested in data science and cloud computing.  
+- Gained insights into **career paths** in cloud engineering and data science fields.  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+  
+
+
+> Overall, this workshop not only provided technical knowledge about AWS ML services but also helped me understand the complete journey from business problems to deployed ML solutions, emphasizing the importance of cloud-native thinking in modern data science projects.

@@ -6,39 +6,48 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
-
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+During my internship, I participated in three events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
 
 ### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** AI-Driven Development Life Cycle: Reimagining Software Engineering  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** 2:00 PM - 4:30 PM, Friday, October 3rd, 2025  
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** AWS Event Hall, L26 Bitexco Tower, HCMC  
 
 &emsp;**Role:** Attendee  
+
+&emsp;**Brief Description:** Workshop organized by AWS GenAI Builder Club focusing on how generative AI transforms the software development lifecycle. Featured demonstrations of Amazon Q Developer by Toan Huynh and Kiro tool by My Nguyen.
+
+&emsp;**Outcomes/Value Gained:** Learned structured AI-DLC methodology, prompt engineering techniques for software development, and hands-on experience with AI-assisted development tools. Gained insights into spec-driven development approach and practical implementation strategies for AI-enhanced productivity.
 
 ---
 
 ### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+&emsp;**Event Name:** Data Science on AWS Workshop  
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+&emsp;**Date & Time:** 9:30 - 11:45 AM, October 18, 2025  
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+&emsp;**Location:** Hall A - FPTU HCMC  
 
 &emsp;**Role:** Attendee  
+
+&emsp;**Brief Description:** Educational workshop hosted by FPT University focusing on Machine Learning fundamentals and AWS AI/ML ecosystem. Led by Van Hoang Kha (Cloud Solutions Architect) and Bach Doan Vuong (Cloud DevOps Engineer).
+
+&emsp;**Outcomes/Value Gained:** Acquired foundational knowledge about ML types (supervised, unsupervised, reinforcement learning), understanding of ML project lifecycle, and practical insights into AWS AI/ML services including the 3-tier ML stack architecture for scalable data science solutions.
+
+---
+
+### [Event 3](4.3-Event3/)  
+&emsp;**Event Name:** Workshop: Secure Your Applications - AWS Perimeter Protection  
+
+&emsp;**Date & Time:** Full-day workshop, Tuesday, November 19, 2025  
+
+&emsp;**Location:** AWS Training Center, Ho Chi Minh City  
+
+&emsp;**Role:** Attendee  
+
+&emsp;**Brief Description:** Hands-on technical workshop by AWS Vietnam focusing on edge security services and perimeter protection strategies. Instructed by Nguyen Gia Hung (Head of SA VN), Julian Ju and Kevin Lim (Regional Edge Security Specialists).
+
+&emsp;**Outcomes/Value Gained:** Mastered AWS WAF configuration for protecting web applications from SQL Injection and XSS attacks, implemented AWS Shield for DDoS protection, and learned edge security architecture patterns. Gained practical experience through hands-on labs configuring security rules and understanding perimeter defense strategies.  

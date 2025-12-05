@@ -1,56 +1,41 @@
 ---
 title: "Worklog Tuần 10"
-date: "2025-09-09"
+date: "2025-11-10"
 weight: 10
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Xây dựng giao diện web cho tương tác hệ thống.
+* Deploy frontend lên S3 + CloudFront.
+* Hoàn thiện integration testing end-to-end.
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| 2   | - Tạo index.html, style.css, app.js <br> - Triển khai logic fetch() cho Dashboard và Search APIs <br> - Hiển thị dữ liệu trong bảng và biểu đồ                                             | 10/11/2025   | 11/11/2025      |
+| 4   | - Upload frontend lên S3 bucket <br> - Bật Static Website Hosting <br> - Cấu hình CloudFront distribution cho HTTPS                                                                         | 12/11/2025   | 12/11/2025      |
+| 5   | - Integration test end-to-end: Unlock thiết bị → Đo vi phạm → Nhập CCCD → Web tự động cập nhật <br> - Sửa lỗi UI/UX <br> - Tối ưu hóa performance                                         | 13/11/2025   | 14/11/2025      |
+
+| Thứ | Sự kiện/Công việc | Ngày | Hình thức | Nội dung & Kết quả |
+| --- | ----------------- | ---- | --------- | ------------------ |
+| 7   | **AWS Cloud Mastery Series #1**<br/>*Generative AI với Amazon Bedrock* | 15/11/2025 | Offline | **Chủ đề chính:**<br/>• Kiến trúc RAG để kết nối LLM với dữ liệu doanh nghiệp<br/>• Xây dựng AI Agents với khả năng Runtime và Memory<br/>• Kỹ thuật Few-shot prompting để tối ưu kết quả AI<br/><br/>**Kết quả học tập:**<br/>✓ Hiểu rõ kiến trúc RAG (Retrieval-Augmented Generation)<br/>✓ Thực hành xây dựng AI Agents với khả năng tự động hóa tác vụ<br/>✓ Nắm vững kỹ thuật tối ưu hóa few-shot prompting |
+| 7   | **Họp Nhóm #3**<br/>*Frontend Demo & Testing* | 15/11/2025 | Offline | **Trọng tâm:**<br/>• Demo giao diện web cho stakeholders<br/>• Thu thập feedback về UI/UX<br/>• Stress test tải API<br/><br/>**Kết quả:**<br/>✓ Web hiển thị dữ liệu real-time chính xác<br/>✓ Xác định cải tiến UI nhỏ |
+
+| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- |
+| CN   | - Áp dụng cải tiến UI/UX <br> - Deployment staging cuối cùng <br> - Tài liệu: User guide và API documentation <br> - Viết worklog và review tiến độ tuần | 16/11/2025   | 16/11/2025      |
 
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
+* **Frontend**: Giao diện web responsive với bảng và biểu đồ.
+* **Deployment**: Website công khai qua CloudFront với HTTPS.
+* **Integration**: Toàn bộ workflow test thành công.
+* **Deliverable**: Website live hiển thị dữ liệu thiết bị chính xác.
   * ...
 
 * Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
